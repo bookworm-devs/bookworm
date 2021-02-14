@@ -223,7 +223,7 @@ class BookmarksViewer(SimpleDialog):
             wx.MessageBox(
                 # Translators: content of a message asking the user if they want to delete a bookmark
                 _(
-                    "This action can not be reverted.\r\nAre you sure you want to remove this bookmark?"
+                    "This action can not be reverted.\nAre you sure you want to remove this bookmark?"
                 ),
                 # Translators: title of a message asking the user if they want to delete a bookmark
                 _("Remove Bookmark?"),
@@ -475,7 +475,7 @@ class AnnotationWithContentDialog(SimpleDialog):
             wx.MessageBox(
                 # Translators: content of a message asking the user if they want to delete a comment/highlight
                 _(
-                    "This action can not be reverted.\r\nAre you sure you want to remove this item?"
+                    "This action can not be reverted.\nAre you sure you want to remove this item?"
                 ),
                 # Translators: title of a message asking the user if they want to delete a bookmark
                 _("Delete Annotation?"),
@@ -604,7 +604,7 @@ class ExportNotesDialog(SimpleDialog):
             # Translators: label of a checkbox in a dialog to set export options for comments/highlights
             parent,
             -1,
-            _("Include  page number"),
+            _("Include page number"),
         )
         # Translators: label of a checkbox in a dialog to set export options for comments/highlights
         self.includeTagsCheckbox = wx.CheckBox(parent, -1, _("Include tags"))
@@ -619,7 +619,7 @@ class ExportNotesDialog(SimpleDialog):
             parent, -1, style=wx.TE_READONLY | wx.TE_MULTILINE
         )
         # Translators: text of a button in a dialog to set export options for comments/highlights
-        browseButton = wx.Button(parent, -1, _("&Browse"))
+        browseButton = wx.Button(parent, -1, _("&Browse..."))
         self.openAfterExportCheckBox = wx.CheckBox(
             parent,
             -1,
